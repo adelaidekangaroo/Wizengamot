@@ -7,7 +7,7 @@ the main page, you can enable or disable notifications about new photos appearin
 In the enabled mode, notifications pass every 15 minutes or less often (if there are no new photos yet).
 
 #### *Requirements for run*
-Set your *clientId* from [unsplash for developers](https://unsplash.com/developers) to ```du.born.flicility.network.API.ACCESS_KEY```
+Set your *clientId* from [unsplash for developers](https://unsplash.com/developers) to [du.born.flicility.network.API.ACCESS_KEY](https://github.com/adelaidekangaroo/Wizengamot/blob/main/app/src/main/java/edu/born/flicility/network/API.kt#L4)
 
 #### *Using stack:* 
 
