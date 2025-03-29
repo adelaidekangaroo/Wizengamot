@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/fragment_login_background1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#121212"
+        app:layout_constraintBottom_toTopOf="@id/fragment_login_background2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="65" />
+
+    <View
+        android:id="@+id/fragment_login_background2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#303030"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_login_background1"
+        app:layout_constraintVertical_weight="35" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="10" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragment_login_main_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="32dp"
+            android:layout_weight="80"
+            app:cardElevation="30dp"
+            app:cardBackgroundColor="#303030"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/fragment_login_image_view_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_baseline_person_pin_24" />
+
+                <TextView
+                    android:id="@+id/fragment_login_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sing_in_please"
+                    android:textAlignment="center"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/fragment_login_button_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="64dp"
+                    android:backgroundTint="#D61B1B"
+                    android:text="@string/sign_in_button_text"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="10" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
